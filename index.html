@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <meta name="description" content="Dashboard Hub: encuentra y abre tus tableros desde un solo lugar." />
+    <title>Dashboard Hub — Tus tableros, más cerca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <section class="toolbar" aria-label="Filtros de dashboards">
+        <div class="category-scroll" id="category-filters" role="tablist" aria-label="Filtrar por categoría"></div>
+        <button class="sort-button" id="sort-button" type="button"><span class="sort-icon">↕</span> Más usados <span class="chevron">⌄</span></button>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="section-kicker">Tu colección</p>
+          <h2>Accesos rápidos <span id="result-count">12</span></h2>
+        </div>
+        <button class="text-button" id="favorites-only" type="button" aria-pressed="false"><span>☆</span> Ver favoritos</button>
+      </section>
+
+      <section class="dashboard-grid" id="dashboard-grid" aria-live="polite"></section>
+
+      <section class="empty-state" id="empty-state" hidden>
+        <div class="empty-icon">⌕</div>
+        <h3>No encontramos ese dashboard</h3>
+        <p>Prueba con otro nombre, palabra clave o categoría.</p>
+        <button class="primary-button" id="clear-filters" type="button">Ver toda la colección</button>
+      </section>
+
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="info-dialog" id="info-dialog">
+      <button class="dialog-close" id="close-dialog" type="button" aria-label="Cerrar">×</button>
+      <p class="section-kicker">Personaliza tu hub</p>
+      <h2>Tu catálogo, tus reglas.</h2>
+      <p>Para reemplazar los accesos de ejemplo, abre <code>app.js</code> y edita el arreglo <code>dashboards</code>. Puedes cambiar nombre, categoría, color, ícono, descripción y URL sin tocar la estructura visual.</p>
+      <div class="code-note"><span>url:</span> <strong>'https://tu-dashboard.com'</strong></div>
+      <button class="primary-button" id="close-dialog-action" type="button">Entendido</button>
+    </dialog>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
