@@ -1,7 +1,7 @@
 const dashboards = [
   { id: 'lb-cartera', name: 'Cartera y Cobranza', category: 'LATINBIEN', icon: '₡', color: '#213c83', description: 'Gestión de cobranza, ciclos, plan de pagos y segmentos.', keywords: 'cartera cobranza cobros cuotas vencidos ciclos pagos segmentos expedientes pronto pago', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
   { id: 'lb-cierre', name: 'Cierre Comercial', category: 'LATINBIEN', icon: '↗', color: '#f98b10', description: 'Facturación 2026 y cierre comercial del mes.', keywords: 'cierre comercial facturacion ventas 2026', url: 'https://latinbienti-sys.github.io/cierreslb/' },
-  { id: 'lb-finanzas', name: 'Finanzas', category: 'LATINBIEN', icon: '$', color: '#3d6194', description: 'Gastos por razón y control de pagos.', keywords: 'finanzas egresos gastos pagos razon proveedores', url: 'https://latinbienti-sys.github.io/egresos/gastos_razon_pagos.html' },
+  { id: 'lb-finanzas', name: 'Finanzas', category: 'LATINBIEN', icon: '$', color: '#3d6194', description: 'Gastos, control de pagos y balance consolidado.', keywords: 'finanzas egresos gastos pagos razon proveedores balance consolidado', url: 'https://latinbienti-sys.github.io/egresos/gastos_razon_pagos.html', links: [{ name: 'Gastos y pagos', url: 'https://latinbienti-sys.github.io/egresos/gastos_razon_pagos.html' }, { name: 'Balance', url: 'https://balance-consolidado.vercel.app/' }] },
   { id: 'lb-historico', name: 'Facturación Histórica', category: 'LATINBIEN', icon: '▤', color: '#3d6194', description: 'Facturación mensual de los últimos 24 meses.', keywords: 'historico anual facturacion mensual 24 meses', url: 'https://latinbienti-sys.github.io/historicoanual/' },
   { id: 'lb-solicitudes', name: 'CRM Solicitudes', category: 'LATINBIEN', icon: '◎', color: '#213c83', description: 'Leads y solicitudes de crédito recibidas.', keywords: 'crm solicitudes leads credito clientes', url: 'https://latinbienti-sys.github.io/crmsolicitudes/' },
   { id: 'lb-productos', name: 'Productos más Vendidos', category: 'LATINBIEN', icon: '★', color: '#f98b10', description: 'Ranking y análisis de productos vendidos.', keywords: 'productos mas vendidos ventas ranking analisis', url: '#', building: true },
@@ -64,6 +64,7 @@ function cardTemplate(dashboard) {
       <div class="card-content">
         <h3 class="card-title">${dashboard.name}</h3>
         <p class="card-description">${dashboard.description}</p>
+        ${dashboard.links ? `<div class="sub-links">${dashboard.links.map((link) => `<a class="sub-link" href="${link.url}" target="_blank" rel="noopener">${link.name} <span>↗</span></a>`).join('')}</div>` : ''}
       </div>
       <div class="card-footer">
         <span class="card-tag">${dashboard.category}</span>

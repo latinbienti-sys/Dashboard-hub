@@ -146,3 +146,6 @@ h2 { margin: 6px 0 0; font-family: Manrope, sans-serif; font-size: 24px; letter-
 @media (max-width: 700px) { .brand-header { padding: 20px 18px 22px; border-radius: 20px; } .brand-header .quick-search { padding-top: 22px; } .brand-header .quick-search .search-box { margin-top: 16px; } }
 .open-link.is-building { padding: 4px 8px; color: var(--orange-ink); border-radius: 6px; background: #fff1df; font-size: 9px; cursor: help; }
 .dashboard-card:has(.is-building) .app-icon { filter: grayscale(.35); opacity: .75; }
+.sub-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.sub-link { display: inline-flex; align-items: center; gap: 4px; padding: 5px 9px; color: color-mix(in srgb, var(--card-color) 78%, #000); border: 1px solid color-mix(in srgb, var(--card-color) 30%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--card-color) 8%, #fff); text-decoration: none; font-size: 10px; font-weight: 700; transition: .2s ease; }
+.sub-link:hover { color: #fff; background: var(--card-color); }
