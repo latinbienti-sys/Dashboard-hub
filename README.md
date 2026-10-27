@@ -6,7 +6,7 @@ Biblioteca visual estática que centraliza los accesos a los tableros publicados
 
 | Categoría | Tableros |
 | --- | --- |
-| LATINBIEN | Cartera y Cobranza, Cierre Comercial, Facturación Histórica, CRM Solicitudes, Productos más Vendidos (en construcción), Stock en Almacenes (en construcción), Histórico por Servicio, Scoring Crediticio, Estudio de Mercado, Comparación de Precios |
+| LATINBIEN | Cartera y Cobranza, Cierre Comercial, Facturación Histórica, CRM Solicitudes, Productos más Vendidos (en construcción), Stock en Almacenes (en construcción), Histórico por Servicio, Scoring Crediticio, Estudio de Mercado, Comparación de Precios, Membresía |
 | TI | Gestión de Tareas TI, Roadmap Estratégico TI |
 | HONDA | CRM Financiamiento, Inventario Vehículos, Simulador Honda |
 | BERA | Dashboard Bera |
