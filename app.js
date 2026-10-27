@@ -1,13 +1,20 @@
 const dashboards = [
-  { id: 'latinbien-ventas', name: 'Ventas', category: 'LATINBIEN', icon: '↗', color: '#ef7d68', description: 'Ventas, ingresos y cuota comercial.', keywords: 'latinbien ventas revenue ingresos comercial', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'latinbien-finanzas', name: 'Finanzas', category: 'LATINBIEN', icon: '$', color: '#6e9e42', description: 'Flujo de caja y control presupuestal.', keywords: 'latinbien finanzas caja presupuesto gastos', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'latinbien-soporte', name: 'Soporte', category: 'LATINBIEN', icon: '◌', color: '#59a884', description: 'Tickets, tiempos y satisfacción.', keywords: 'latinbien soporte tickets atención satisfacción', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'latinbien-inventario', name: 'Inventario', category: 'LATINBIEN', icon: '▦', color: '#4b87c5', description: 'Stock, rotación y quiebres.', keywords: 'latinbien inventario stock logística rotación', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'latinbien-crm', name: 'CRM', category: 'LATINBIEN', icon: '◎', color: '#705fe8', description: 'Clientes, oportunidades y seguimiento comercial.', keywords: 'latinbien crm clientes oportunidades ventas', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'latinbien-clientes', name: 'Clientes', category: 'LATINBIEN', icon: '♙', color: '#c77cc9', description: 'Cartera, segmentos, clientes activos y VIP.', keywords: 'latinbien clientes cartera segmentos vip', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'latinbien-cobranza', name: 'Cobranza', category: 'LATINBIEN', icon: '₡', color: '#d58b36', description: 'Cuotas, vencidos, ciclos y gestión de cobros.', keywords: 'latinbien cobranza cobros cuotas vencidos ciclos pagos', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
-  { id: 'honda-inventario', name: 'Inventario', category: 'HONDA', icon: '▦', color: '#d33f55', description: 'Stock, rotación y disponibilidad.', keywords: 'honda inventario stock logística rotación', url: '#', example: true },
-  { id: 'honda-crm', name: 'CRM', category: 'HONDA', icon: '◎', color: '#1f75b9', description: 'Clientes, oportunidades y seguimiento comercial.', keywords: 'honda crm clientes oportunidades ventas', url: '#', example: true }
+  { id: 'lb-cartera', name: 'Cartera y Cobranza', category: 'LATINBIEN', icon: '₡', color: '#213c83', description: 'Gestión de cobranza, ciclos, plan de pagos y segmentos.', keywords: 'cartera cobranza cobros cuotas vencidos ciclos pagos segmentos expedientes pronto pago', url: 'https://latinbienti-sys.github.io/dashboard-latinbien/' },
+  { id: 'lb-cierre', name: 'Cierre Comercial', category: 'LATINBIEN', icon: '↗', color: '#f98b10', description: 'Facturación 2026 y cierre comercial del mes.', keywords: 'cierre comercial facturacion ventas 2026', url: 'https://latinbienti-sys.github.io/cierreslb/' },
+  { id: 'lb-historico', name: 'Facturación Histórica', category: 'LATINBIEN', icon: '▤', color: '#3d6194', description: 'Facturación mensual de los últimos 24 meses.', keywords: 'historico anual facturacion mensual 24 meses', url: 'https://latinbienti-sys.github.io/historicoanual/' },
+  { id: 'lb-solicitudes', name: 'CRM Solicitudes', category: 'LATINBIEN', icon: '◎', color: '#213c83', description: 'Leads y solicitudes de crédito recibidas.', keywords: 'crm solicitudes leads credito clientes', url: 'https://latinbienti-sys.github.io/crmsolicitudes/' },
+  { id: 'lb-productos', name: 'Productos más Vendidos', category: 'LATINBIEN', icon: '★', color: '#f98b10', description: 'Ranking y análisis de productos vendidos.', keywords: 'productos mas vendidos ventas ranking analisis', url: '#', building: true },
+  { id: 'lb-stock', name: 'Stock en Almacenes', category: 'LATINBIEN', icon: '▦', color: '#213c83', description: 'Inventario disponible por almacén.', keywords: 'stock inventario almacenes existencias logistica', url: '#', building: true },
+  { id: 'lb-servicios', name: 'Histórico por Servicio', category: 'LATINBIEN', icon: '◷', color: '#3d6194', description: 'Evolución mensual por línea de servicio.', keywords: 'servicios historico mensual hub', url: 'https://latinbienti-sys.github.io/hubservices/' },
+  { id: 'lb-scoring', name: 'Scoring Crediticio', category: 'LATINBIEN', icon: '✓', color: '#213c83', description: 'Análisis de estados de cuenta bancarios.', keywords: 'scoring credito estados de cuenta bancarios riesgo', url: 'https://latinbienti-sys.github.io/scoring/' },
+  { id: 'lb-mercado', name: 'Estudio de Mercado', category: 'LATINBIEN', icon: '$', color: '#f98b10', description: 'Precios de referencia en Mérida, Venezuela.', keywords: 'estudio mercado precios merida competencia', url: 'https://latinbienti-sys.github.io/comparativoprecios/' },
+  { id: 'lb-comparativo', name: 'Comparación de Precios', category: 'LATINBIEN', icon: '⇄', color: '#3d6194', description: 'Comparativo completo de precios en Mérida.', keywords: 'comparativo precios merida competencia', url: 'https://latinbienti-sys.github.io/comparativo/' },
+  { id: 'ti-tareas', name: 'Gestión de Tareas TI', category: 'TI', icon: '☰', color: '#213c83', description: 'KPIs y seguimiento de tareas del área de TI.', keywords: 'ti tecnologia tareas kpi gestion', url: 'https://latinbienti-sys.github.io/tindicadores/' },
+  { id: 'ti-roadmap', name: 'Roadmap Estratégico TI', category: 'TI', icon: '◆', color: '#f98b10', description: 'Hoja de ruta y proyectos estratégicos de TI.', keywords: 'ti roadmap estrategia proyectos tecnologia', url: 'https://latinbienti-sys.github.io/preoject/' },
+  { id: 'honda-crm', name: 'CRM Financiamiento', category: 'HONDA', icon: '◎', color: '#cc0000', description: 'Seguimiento de financiamientos Honda Mérida.', keywords: 'honda crm financiamiento clientes merida', url: 'https://latinbienti-sys.github.io/gestionhonda/' },
+  { id: 'honda-inventario', name: 'Inventario Vehículos', category: 'HONDA', icon: '▦', color: '#cc0000', description: 'Vehículos Honda disponibles en LatinBien Motors.', keywords: 'honda inventario vehiculos stock motors', url: 'https://latinbienti-sys.github.io/inventariohonda/' },
+  { id: 'honda-simulador', name: 'Simulador Honda', category: 'HONDA', icon: '%', color: '#cc0000', description: 'Simulador de financiamiento LatinBien Motors.', keywords: 'honda simulador financiamiento cuotas motors', url: 'https://script.google.com/macros/s/AKfycbz4SFk3WI3bo2UhdMg5jRcIq2TXoyT3KgaTYuwovbC7sFmgYl0kuWZFqZbxYVuFrUU3/exec' },
+  { id: 'bera-dashboard', name: 'Dashboard Bera', category: 'BERA', icon: '⚑', color: '#3d6194', description: 'Indicadores de la línea de motos Bera.', keywords: 'bera motos dashboard ventas', url: 'https://latinbienti-sys.github.io/motosberlb/' }
 ];
 
 const state = { category: 'Todos', query: '', favoritesOnly: false, sort: 'popular' };
@@ -46,7 +53,7 @@ function filteredDashboards() {
 function cardTemplate(dashboard) {
   const isFavorite = favorites.has(dashboard.id);
   return `
-    <article class="dashboard-card" style="--card-color: ${dashboard.color}; --icon-ink: ${dashboard.icon === '$' ? '#fff' : '#fff'}">
+    <article class="dashboard-card" style="--card-color: ${dashboard.color};">
       <div class="card-top">
         <div class="app-icon" aria-hidden="true">${dashboard.icon}</div>
         <button class="favorite-button ${isFavorite ? 'is-favorite' : ''}" type="button" aria-label="${isFavorite ? 'Quitar' : 'Agregar'} ${dashboard.name} ${isFavorite ? 'de favoritos' : 'a favoritos'}" aria-pressed="${isFavorite}" data-favorite="${dashboard.id}">${isFavorite ? '★' : '☆'}</button>
@@ -57,7 +64,7 @@ function cardTemplate(dashboard) {
       </div>
       <div class="card-footer">
         <span class="card-tag">${dashboard.category}</span>
-        ${dashboard.example ? `<button class="open-link open-example" type="button" data-open="${dashboard.id}">Abrir <span>↗</span></button>` : `<a class="open-link" href="${dashboard.url}" target="_blank" rel="noopener">Abrir <span>↗</span></a>`}
+        ${dashboard.building ? `<button class="open-link is-building" type="button" data-open="${dashboard.id}">En construcción</button>` : `<a class="open-link" href="${dashboard.url}" target="_blank" rel="noopener">Abrir <span>↗</span></a>`}
       </div>
     </article>
   `;
@@ -101,25 +108,25 @@ document.addEventListener('click', (event) => {
     showToast(favorites.has(id) ? 'Dashboard agregado a favoritos' : 'Dashboard retirado de favoritos');
     return;
   }
-  const exampleButton = event.target.closest('[data-open]');
-  if (exampleButton) {
-    const dashboard = dashboards.find((item) => item.id === exampleButton.dataset.open);
-    showToast(`${dashboard?.name || 'Dashboard'}: reemplaza el enlace de ejemplo en app.js`);
+  const buildingButton = event.target.closest('[data-open]');
+  if (buildingButton) {
+    const dashboard = dashboards.find((item) => item.id === buildingButton.dataset.open);
+    showToast(`${dashboard?.name || 'Dashboard'}: tablero en construcción, pronto disponible`);
     return;
   }
   const openCard = event.target.closest('.dashboard-card');
   if (openCard && !event.target.closest('button, a')) {
-    const title = openCard.querySelector('.card-title')?.textContent || 'Dashboard';
-    showToast(`${title}: reemplaza el enlace de ejemplo en app.js`);
+    openCard.querySelector('.open-link')?.click();
   }
 });
 
+searchInput?.addEventListener('input', (event) => { state.query = event.target.value; render(); });
 document.querySelector('#favorites-only').addEventListener('click', () => { state.favoritesOnly = !state.favoritesOnly; render(); });
 document.querySelector('#sort-button').addEventListener('click', () => {
   state.sort = state.sort === 'popular' ? 'favorites' : 'popular';
   document.querySelector('#sort-button').innerHTML = `<span class="sort-icon">↕</span> ${state.sort === 'favorites' ? 'Favoritos primero' : 'Más usados'} <span class="chevron">⌄</span>`;
   render();
 });
-document.querySelector('#clear-filters').addEventListener('click', () => { state.category = 'Todos'; state.query = ''; state.favoritesOnly = false; render(); });
+document.querySelector('#clear-filters').addEventListener('click', () => { state.category = 'Todos'; state.query = ''; if (searchInput) searchInput.value = ''; state.favoritesOnly = false; render(); });
 
 render();
