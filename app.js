@@ -18,6 +18,7 @@ const dashboards = [
   { id: 'honda-crm', name: 'CRM Financiamiento', category: 'HONDA', icon: '◎', color: '#cc0000', description: 'Seguimiento de financiamientos Honda Mérida.', keywords: 'honda crm financiamiento clientes merida', url: 'https://latinbienti-sys.github.io/gestionhonda/' },
   { id: 'honda-inventario', name: 'Inventario Vehículos', category: 'HONDA', icon: '▦', color: '#cc0000', description: 'Vehículos Honda disponibles en LatinBien Motors.', keywords: 'honda inventario vehiculos stock motors', url: 'https://latinbienti-sys.github.io/inventariohonda/' },
   { id: 'honda-simulador', name: 'Simulador Honda', category: 'HONDA', icon: '%', color: '#cc0000', description: 'Simulador de financiamiento LatinBien Motors.', keywords: 'honda simulador financiamiento cuotas motors', url: 'https://script.google.com/macros/s/AKfycbz4SFk3WI3bo2UhdMg5jRcIq2TXoyT3KgaTYuwovbC7sFmgYl0kuWZFqZbxYVuFrUU3/exec' },
+  { id: 'honda-perfil', name: 'Perfil', category: 'HONDA', icon: '♙', color: '#cc0000', description: 'Tablero de ventas LatinBien Motors 2026.', keywords: 'honda perfil ventas tablero motors clientes 2026', url: 'https://latinbienti-sys.github.io/perfilhonda/reporte/tablero_ventas.html' },
   { id: 'bera-dashboard', name: 'Dashboard Bera', category: 'BERA', icon: '⚑', color: '#3d6194', description: 'Indicadores de la línea de motos Bera.', keywords: 'bera motos dashboard ventas', url: 'https://latinbienti-sys.github.io/motosberlb/' }
 ];
 
